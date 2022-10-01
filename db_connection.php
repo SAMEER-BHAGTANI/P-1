@@ -1,10 +1,10 @@
 <?php
 
-$conn=mysqli_connect();
+$conn=mysqli_connect('localhost','root','','database_name');
 
-if(true)
+if($conn)
 {
-	echo "connected";
+	echo "connected to database";
 }
 else
 {
