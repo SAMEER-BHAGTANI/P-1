@@ -10,14 +10,16 @@ void main()
 	for(i=0;i<=4;i++)
 	{
 		printf("\n\t\t\tEnter %d number : ",i+1);
-		
+		scanf("%d",&a[i]);
 	}
 
 	for(i=0;i<=4;i++)
 	{
 		for(j=0;j<=i;j++)
 		{
-			
+			temp=a[i];
+			a[i]=a[j];
+			a[j]=temp;
 		}
 	}
 
@@ -26,7 +28,7 @@ void main()
 
 	for(i=0;i<=4;i++)
 	{
-		printf("\n\n\t\t\t%d",a);
+		printf("\n\n\t\t\t%d",a[i]);
 	}
 
 	getch();
